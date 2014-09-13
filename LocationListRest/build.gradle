@@ -21,5 +21,3 @@ repositories {
 dependencies {
     compile 'junit:junit:4.8.2'
 }
-
-//Bar
