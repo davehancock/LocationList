@@ -1,3 +1,51 @@
 .middle {
- text-align: center;
+    text-align: center;
+}
+
+.outer-list-container {
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+
+.middle-list-container {
+    display: table-cell;
+    vertical-align: middle;
+
+    height: 300px;
+    width: 700px;
+}
+
+.inner-list-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 300px;
+    width: 700px;
+}
+
+.list-table {
+    border-style: solid;
+    border-color: black;
+
+    overflow: auto;
+    height: 200px;
+}
+
+.list-input-group {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.list-label {
+    margin-top: 5px;
+    float: left;
+    width: 50%;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-input {
+    width: 50%;
 }

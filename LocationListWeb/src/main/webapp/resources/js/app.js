@@ -1,7 +1,7 @@
 locationListApp = angular.module('locationListApp', ['ngRoute', 'mapModule', 'listModule']);
 
 locationListApp.config(function ($routeProvider) {
-    console.log("Route Provider Invoked", $routeProvider);
+
     $routeProvider
         .when('/',
         {
