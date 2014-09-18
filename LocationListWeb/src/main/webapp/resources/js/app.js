@@ -3,16 +3,10 @@ locationListApp = angular.module('locationListApp', ['ngRoute', 'mapModule', 'li
 locationListApp.config(function ($routeProvider) {
 
     $routeProvider
-        .when('/',
-        {
-            templateUrl: 'resources/html/home.html',
-            controller: 'homeCtrl',
-            activeTab: 'homeTab'
-        })
-        .when('/list', {
+        .when('/summary', {
             templateUrl: 'resources/html/summary.html',
             controller: 'summaryCtrl',
-            activeTab: 'listTab'
+            activeTab: 'summaryTab'
         })
         .when('/map', {
             templateUrl: 'resources/html/location.html',
@@ -20,7 +14,7 @@ locationListApp.config(function ($routeProvider) {
             activeTab: 'mapTab'
         })
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/summary'
         });
 });
 
