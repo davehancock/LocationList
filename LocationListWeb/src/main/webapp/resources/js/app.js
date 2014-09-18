@@ -10,12 +10,12 @@ locationListApp.config(function ($routeProvider) {
             activeTab: 'homeTab'
         })
         .when('/list', {
-            templateUrl: 'resources/html/list.html',
+            templateUrl: 'resources/html/summary.html',
             controller: 'listCtrl',
             activeTab: 'listTab'
         })
         .when('/map', {
-            templateUrl: 'resources/html/map.html',
+            templateUrl: 'resources/html/location.html',
             controller: 'mapCtrl',
             activeTab: 'mapTab'
         })
