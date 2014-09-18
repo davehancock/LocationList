@@ -8,14 +8,14 @@ listModule.service('summaryService', function () {
 
     this.getList = function () {
         return listItems;
-    }
+    };
 
     this.addListItem = function (listItem) {
         listItems.push(listItem);
-    }
+    };
 
     this.deleteListItem = function () {
         listItems.splice(0, 1);
-    }
+    };
 
-})
+});

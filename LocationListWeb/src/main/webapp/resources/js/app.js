@@ -11,12 +11,12 @@ locationListApp.config(function ($routeProvider) {
         })
         .when('/list', {
             templateUrl: 'resources/html/summary.html',
-            controller: 'listCtrl',
+            controller: 'summaryCtrl',
             activeTab: 'listTab'
         })
         .when('/map', {
             templateUrl: 'resources/html/location.html',
-            controller: 'mapCtrl',
+            controller: 'locationCtrl',
             activeTab: 'mapTab'
         })
         .otherwise({

@@ -12,4 +12,4 @@ listModule.factory('summaryFactory', function () {
         }
     };
 
-})
+});

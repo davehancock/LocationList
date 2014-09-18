@@ -1,9 +1,7 @@
-locationListApp.controller("navCtrl", ["$scope", "$route", "listService", function ($scope, $route, listService) {
+locationListApp.controller("navCtrl", ["$scope", "$route", "summaryService", function ($scope, $route, summaryService) {
 
     $scope.$route = $route;
 
-    var listService = listService;
-
-    $scope.listItems = listService.getList();
+    $scope.listItems = summaryService.getList();
 
 }]);

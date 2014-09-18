@@ -1,30 +1,27 @@
-listModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "listService",
-    function ($scope, $route, $filter, listService) {
+listModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "summaryService",
+    function ($scope, $route, $filter, summaryService) {
 
-    $scope.$route = $route;
+        $scope.$route = $route;
 
-    $scope.listItems = listService.getList();
+        $scope.summaryItems = summaryService.getList();
 
-    $scope.description = null;
+        $scope.addListItem = function (description) {
 
-    // List operations
-    $scope.addListItem = function (description) {
+            if (description == null) {
+                description = "N/A";
+            }
 
-        if(description==null){
-            description = "N/A";
-        }
+            var dateTime = $filter('date')(new Date, "dd/MM/yyyy HH:mm:ss");
+            var listItem = {desc: description, location: "new loc", timestamp: dateTime};
 
-        var dateTime = $filter('date')(new Date, "dd/MM/yyyy HH:mm:ss");
-        var listItem = {desc: description, location: "new loc", timestamp: dateTime};
+            summaryService.addListItem(listItem);
 
-        listService.addListItem(listItem);
+            // Reset Description
+            $scope.description = null;
+        };
 
-        // Reset Description
-        $scope.description = null;
-    };
+        $scope.deleteListItem = function () {
+            summaryService.deleteListItem();
+        };
 
-    $scope.deleteListItem = function () {
-        listService.deleteListItem();
-    };
-
-}]);
+    }]);
