@@ -1,27 +1,27 @@
 package com.djh.location.list.service;
 
 import com.djh.location.list.dao.LocationListDAO;
-import com.djh.location.list.model.LocationListItem;
+import com.djh.location.list.model.SummaryItem;
 
 /**
  * @author David Hancock
  */
-public class DefaultLocationListService implements LocationListService {
+public class DefaultSummaryService implements SummaryService {
 
     private LocationListDAO locationListDAO;
 
     @Override
-    public void addItem(LocationListItem locationListItem) {
-        locationListDAO.saveLocationListItem(locationListItem);
+    public void addItem(SummaryItem summaryItem) {
+        locationListDAO.saveLocationListItem(summaryItem);
     }
 
     @Override
-    public void deleteItem(LocationListItem locationListItem) {
+    public void deleteItem(SummaryItem summaryItem) {
         locationListDAO.deleteLocationListItem(null);
     }
 
     @Override
-    public void updateItem(LocationListItem locationListItem) {
+    public void updateItem(SummaryItem summaryItem) {
 
     }
 

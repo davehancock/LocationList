@@ -3,7 +3,7 @@ package com.djh.location.list.model;
 /**
  * @author David Hancock
  */
-public class LocationListItem {
+public class SummaryItem {
 
     private Long id;
 
@@ -13,7 +13,7 @@ public class LocationListItem {
 
     private String time;
 
-    public LocationListItem(String description, String location, String time) {
+    public SummaryItem(String description, String location, String time) {
         this.description = description;
         this.location = location;
         this.time = time;

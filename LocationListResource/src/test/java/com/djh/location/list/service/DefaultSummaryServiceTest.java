@@ -2,7 +2,7 @@ package com.djh.location.list.service;
 
 import com.djh.location.list.dao.LocationListDAO;
 import com.djh.location.list.dao.SimpleLocationListDAO;
-import com.djh.location.list.model.LocationListItem;
+import com.djh.location.list.model.SummaryItem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,9 +10,9 @@ import org.junit.Test;
 /**
  * @author David Hancock
  */
-public class DefaultLocationListServiceTest {
+public class DefaultSummaryServiceTest {
 
-    private DefaultLocationListService locationListService = new DefaultLocationListService();
+    private DefaultSummaryService locationListService = new DefaultSummaryService();
 
     private LocationListDAO locationListDAO = new SimpleLocationListDAO();
 
@@ -24,8 +24,8 @@ public class DefaultLocationListServiceTest {
     @Test
     public void testAddItem(){
 
-        LocationListItem locationListItem = new LocationListItem("desc","loc","time");
-        locationListService.addItem(locationListItem);
-        Assert.assertNotNull(locationListItem);
+        SummaryItem summaryItem = new SummaryItem("desc","loc","time");
+        locationListService.addItem(summaryItem);
+        Assert.assertNotNull(summaryItem);
     }
 }
