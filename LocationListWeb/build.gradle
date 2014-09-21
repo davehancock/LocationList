@@ -19,7 +19,6 @@ buildscript {
     }
 }
 
-
 // Tomcat Remote Deploy
 cargo {
     containerId = 'tomcat7x'

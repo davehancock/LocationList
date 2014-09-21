@@ -1,4 +1,4 @@
-listModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "summaryService",
+summaryModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "summaryService",
     function ($scope, $route, $filter, summaryService) {
 
         $scope.$route = $route;

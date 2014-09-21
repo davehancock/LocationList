@@ -1,4 +1,4 @@
-listModule.factory('summaryFactory', function () {
+summaryModule.factory('summaryFactory', function () {
 
     var listItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},

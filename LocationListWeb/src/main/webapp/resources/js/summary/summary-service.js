@@ -1,4 +1,4 @@
-listModule.service('summaryService', function () {
+summaryModule.service('summaryService', function () {
 
     var listItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
