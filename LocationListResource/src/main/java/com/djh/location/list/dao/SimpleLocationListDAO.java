@@ -1,6 +1,7 @@
 package com.djh.location.list.dao;
 
 import com.djh.location.list.model.SummaryItem;
+import com.djh.location.list.model.SummaryItems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ public class SimpleLocationListDAO implements LocationListDAO {
 
     private AtomicLong currentId = new AtomicLong();
 
-    private ConcurrentHashMap<Long, SummaryItem> locationListItemMap = new ConcurrentHashMap<Long, SummaryItem>();
+    private ConcurrentHashMap<Long, SummaryItem> locationListItemMap = new ConcurrentHashMap<>();
 
     @Override
     public void saveLocationListItem(SummaryItem summaryItem) {
@@ -24,17 +25,19 @@ public class SimpleLocationListDAO implements LocationListDAO {
     }
 
     @Override
-    public void deleteLocationListItem(Long locationListItemId) {
-        locationListItemMap.remove(locationListItemId);
+    public void deleteLocationListItem(SummaryItem summaryItem) {
+        Long summaryItemId = summaryItem.getId();
+        locationListItemMap.remove(summaryItemId);
     }
 
-    public List<SummaryItem> findAllLocationListItems() {
-        List<SummaryItem> summaryItems = new ArrayList<SummaryItem>(locationListItemMap.values());
+    public SummaryItems findAllSummaryItems() {
+        List<SummaryItem> summaryItemsList = new ArrayList<>(locationListItemMap.values());
+        SummaryItems summaryItems = new SummaryItems(summaryItemsList);
         return summaryItems;
     }
 
     @Override
-    public SummaryItem findLocationListItemById(Long locationListItemId) {
+    public SummaryItem findSummaryItemById(Long locationListItemId) {
         return locationListItemMap.get(locationListItemId);
     }
 

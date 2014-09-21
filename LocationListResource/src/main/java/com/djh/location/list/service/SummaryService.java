@@ -1,26 +1,21 @@
 package com.djh.location.list.service;
 
 import com.djh.location.list.model.SummaryItem;
+import com.djh.location.list.model.SummaryItems;
+
+import java.util.List;
 
 /**
  * @author David Hancock
  */
 public interface SummaryService {
 
-    /**
-     * @param summaryItem
-     */
     public void addItem(SummaryItem summaryItem);
 
-    /**
-     * @param summaryItem
-     */
     public void deleteItem(SummaryItem summaryItem);
 
+    public SummaryItems findAllSummaryItems();
 
-    /**
-     * @param summaryItem
-     */
     public void updateItem(SummaryItem summaryItem);
 
 }

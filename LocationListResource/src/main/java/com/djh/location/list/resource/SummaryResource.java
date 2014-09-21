@@ -1,4 +1,4 @@
-package com.djh.location.list.rest;
+package com.djh.location.list.resource;
 
 import com.djh.location.list.model.SummaryItem;
 import com.djh.location.list.service.SummaryService;

@@ -2,6 +2,9 @@ package com.djh.location.list.service;
 
 import com.djh.location.list.dao.LocationListDAO;
 import com.djh.location.list.model.SummaryItem;
+import com.djh.location.list.model.SummaryItems;
+
+import java.util.List;
 
 /**
  * @author David Hancock
@@ -17,12 +20,17 @@ public class DefaultSummaryService implements SummaryService {
 
     @Override
     public void deleteItem(SummaryItem summaryItem) {
-        locationListDAO.deleteLocationListItem(null);
+        locationListDAO.deleteLocationListItem(summaryItem);
+    }
+
+    @Override
+    public SummaryItems findAllSummaryItems() {
+        return locationListDAO.findAllSummaryItems();
     }
 
     @Override
     public void updateItem(SummaryItem summaryItem) {
-
+        // NO-OP TODO
     }
 
     public void setLocationListDAO(LocationListDAO locationListDAO) {

@@ -1,6 +1,7 @@
 package com.djh.location.list.dao;
 
 import com.djh.location.list.model.SummaryItem;
+import com.djh.location.list.model.SummaryItems;
 
 import java.util.List;
 
@@ -11,10 +12,10 @@ public interface LocationListDAO {
 
     void saveLocationListItem(SummaryItem summaryItem);
 
-    void deleteLocationListItem(Long locationListItemId);
+    void deleteLocationListItem(SummaryItem locationListItemId);
 
-    List<SummaryItem> findAllLocationListItems();
+    SummaryItems findAllSummaryItems();
 
-    SummaryItem findLocationListItemById(Long locationListItemId);
+    SummaryItem findSummaryItemById(Long locationListItemId);
 
 }

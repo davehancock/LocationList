@@ -5,12 +5,19 @@ summaryModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "summary
 
         $scope.summaryItems = summaryService.getSummary();
 
-        $scope.gridOptions = { data: 'summaryItems' };
+        $scope.gridOptions = {
+            data: 'summaryItems',
+            columnDefs: [
+                {field: 'desc', displayName: 'Description'},
+                {field: 'location', displayName: 'Location'},
+                {field: 'timestamp', displayName: 'Timestamp'}
+            ]
+        };
 
         $scope.addSummaryItem = function (description) {
 
             if (description == null) {
-               description = "N/A";
+                description = "N/A";
             }
 
             var dateTime = $filter('date')(new Date, "dd/MM/yyyy HH:mm:ss");
