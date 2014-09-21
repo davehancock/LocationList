@@ -13,6 +13,10 @@ public class SummaryItem {
 
     private String time;
 
+    public SummaryItem(){
+
+    }
+
     public SummaryItem(String description, String location, String time) {
         this.description = description;
         this.location = location;

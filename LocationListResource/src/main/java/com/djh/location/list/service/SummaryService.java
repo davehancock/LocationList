@@ -3,8 +3,6 @@ package com.djh.location.list.service;
 import com.djh.location.list.model.SummaryItem;
 import com.djh.location.list.model.SummaryItems;
 
-import java.util.List;
-
 /**
  * @author David Hancock
  */
