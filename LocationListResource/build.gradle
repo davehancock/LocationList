@@ -14,6 +14,15 @@ buildscript {
     }
 }
 
+task copyArtifactForDeployment(type: Copy){
+    from("build/libs")
+    into("/deployment/jettyDeployment/LocationList")
+    include('*.jar');
+    rename ('LocationListResource(.*).jar', 'LocationListResource.jar')
+}
+
+copyArtifactForDeployment.dependsOn("jar");
+
 repositories {
     mavenCentral()
 }
