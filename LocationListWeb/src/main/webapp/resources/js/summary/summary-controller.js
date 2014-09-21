@@ -3,25 +3,27 @@ summaryModule.controller("summaryCtrl", ["$scope", "$route", "$filter", "summary
 
         $scope.$route = $route;
 
-        $scope.summaryItems = summaryService.getList();
+        $scope.summaryItems = summaryService.getSummary();
 
-        $scope.addListItem = function (description) {
+        $scope.gridOptions = { data: 'summaryItems' };
+
+        $scope.addSummaryItem = function (description) {
 
             if (description == null) {
-                description = "N/A";
+               description = "N/A";
             }
 
             var dateTime = $filter('date')(new Date, "dd/MM/yyyy HH:mm:ss");
-            var listItem = {desc: description, location: "new loc", timestamp: dateTime};
+            var summaryItem = {desc: description, location: "new loc", timestamp: dateTime};
 
-            summaryService.addListItem(listItem);
+            summaryService.addSummaryItem(summaryItem);
 
             // Reset Description
             $scope.description = null;
         };
 
-        $scope.deleteListItem = function () {
-            summaryService.deleteListItem();
+        $scope.deleteSummaryItem = function () {
+            summaryService.deleteSummaryItem();
         };
 
     }]);
