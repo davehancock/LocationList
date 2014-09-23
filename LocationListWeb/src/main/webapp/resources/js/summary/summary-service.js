@@ -1,4 +1,4 @@
-summaryModule.service('summaryService', function ($http) {
+summaryModule.service('summaryService', function ($scope, $http) {
 
     var summaryItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
@@ -6,9 +6,9 @@ summaryModule.service('summaryService', function ($http) {
         {'desc': 'do something extra', 'location': 'bmouth', 'timestamp': '12:00'}
     ];
 
-    this.getSummary = function () {
-        return summaryItems;
-    };
+//    this.getSummary = function () {
+//        return summaryItems;
+//    };
 
     this.addSummaryItem = function (summaryItem) {
         summaryItems.push(summaryItem);
