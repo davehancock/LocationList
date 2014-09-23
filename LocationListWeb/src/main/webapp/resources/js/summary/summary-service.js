@@ -1,14 +1,4 @@
-summaryModule.service('summaryService',['$rootScope', '$http', function ($rootScope, $http) {
-
-    var summaryItems = [
-        {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
-        {'desc': 'do something more', 'location': 'bham', 'timestamp': '18:00'},
-        {'desc': 'do something extra', 'location': 'bmouth', 'timestamp': '12:00'}
-    ];
-
-    this.getSummary = function () {
-        return summaryItems;
-    };
+summaryModule.service('summaryService', ['$rootScope', '$http', '$q', function ($rootScope, $http, $q) {
 
     this.addSummaryItem = function (summaryItem) {
         summaryItems.push(summaryItem);
@@ -18,15 +8,17 @@ summaryModule.service('summaryService',['$rootScope', '$http', function ($rootSc
         summaryItems.splice(0, 1);
     };
 
-    this.getSummary = function () {
+    this.getSummaryItems = function () {
 
-        $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).
-            success(function (data, status, headers, config) {
+        // deferred = $q.defer();
+        return $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).
+            success(function (data) {
                 return data;
-            }).
-            error(function (data, status, headers, config) {
+                // deferred.resolve();
+            }).error(function (data, status, headers, config) {
                 $rootScope.$broadcast('error:http', status);
             });
+        // return deferred.promise;
     };
 
 }]);

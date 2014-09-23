@@ -2,6 +2,6 @@ locationListApp.controller("navCtrl", ["$scope", "$route", "summaryService", fun
 
     $scope.$route = $route;
 
-    $scope.listItems = summaryService.getSummary();
+    $scope.listItems = summaryService.getSummaryItems();
 
 }]);
