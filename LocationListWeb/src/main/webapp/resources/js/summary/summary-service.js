@@ -18,4 +18,15 @@ summaryModule.service('summaryService', function () {
         summaryItems.splice(0, 1);
     };
 
+    this.getSummary = function () {
+
+        $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).
+            success(function (data, status, headers, config) {
+               return data;
+            }).
+            error(function (data, status, headers, config) {
+                $scope.$broadcast('errorEvent', data);
+            });
+    };
+
 });

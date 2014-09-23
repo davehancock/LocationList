@@ -1,4 +1,4 @@
-locationListApp = angular.module('locationListApp', ['ngRoute', 'mapModule', 'summaryModule', 'ngGrid']);
+locationListApp = angular.module('locationListApp', ['ngRoute', 'mapModule', 'summaryModule', 'errorModule', 'ngGrid']);
 
 locationListApp.config(function ($routeProvider) {
 
@@ -21,3 +21,5 @@ locationListApp.config(function ($routeProvider) {
 mapModule = angular.module('mapModule', []);
 
 summaryModule = angular.module('summaryModule', ['ngGrid']);
+
+errorModule = angular.module('errorModule', []);
