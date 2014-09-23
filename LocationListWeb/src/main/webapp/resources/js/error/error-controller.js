@@ -1,8 +1,8 @@
-errorModule.controller("errorCtrl", function ($scope, $modal) {
+errorModule.controller("errorCtrl" ["$scope", "$modal", function ($scope, $modal) {
 
     $scope.stacktrace = "unknown";
 
-    $scope.$on('errorEvent', function() {
+    $scope.$on('errorEvent', function () {
 
         var modalInstance = $modal.open({
             templateUrl: 'resources/html/errorModal.html',
@@ -10,7 +10,7 @@ errorModule.controller("errorCtrl", function ($scope, $modal) {
         });
     });
 
-});
+}]);
 
 var ErrorModalInstanceCtrl = function ($scope, $modalInstance) {
 

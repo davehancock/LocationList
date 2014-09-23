@@ -1,4 +1,4 @@
-summaryModule.service('summaryService', function ($scope, $http) {
+summaryModule.service('summaryService' ['$scope', '$http', function ($scope, $http) {
 
     var summaryItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
@@ -22,11 +22,11 @@ summaryModule.service('summaryService', function ($scope, $http) {
 
         $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).
             success(function (data, status, headers, config) {
-               return data;
+                return data;
             }).
             error(function (data, status, headers, config) {
                 $scope.$broadcast('errorEvent', data);
             });
     };
 
-});
+}]);
