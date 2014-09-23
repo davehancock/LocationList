@@ -1,4 +1,4 @@
-summaryModule.service('summaryService', ['$scope', '$http', function ($scope, $http) {
+summaryModule.service("summaryService", ["$scope", "$http", function ($scope, $http) {
 
     var summaryItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
