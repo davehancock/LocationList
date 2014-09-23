@@ -1,4 +1,4 @@
-errorModule.controller("errorCtrl" ["$scope", "$modal", function ($scope, $modal) {
+errorModule.controller("errorCtrl", ["$scope", "$modal", function ($scope, $modal) {
 
     $scope.stacktrace = "unknown";
 
