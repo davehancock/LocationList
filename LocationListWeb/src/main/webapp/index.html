@@ -9,7 +9,7 @@
 
 <body ng-cloak ng-app="locationListApp">
 
-<div id="wrap">
+<div id="wrap" ng-controller="errorCtrl">
     <div ng-controller="navCtrl">
         <ul class="nav nav-pills nav-justified">
             <li ng-class="{active: $route.current.activeTab == 'summaryTab'}">
@@ -44,6 +44,7 @@
 <!-- endbower -->
 
 <script src="resources/js/app.js"></script>
+<script src="resources/js/error/error-controller.js"></script>
 <script src="resources/js/controller/nav-controller.js"></script>
 <script src="resources/js/location/location-controller.js"></script>
 <script src="resources/js/summary/summary-controller.js"></script>

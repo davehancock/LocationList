@@ -1,5 +1,6 @@
 package com.djh.spring.configuration;
 
+import com.djh.filter.ResourceCORSFilter;
 import com.djh.location.list.dao.LocationListDAO;
 import com.djh.location.list.dao.SimpleLocationListDAO;
 import com.djh.location.list.resource.SummaryResource;
@@ -8,6 +9,9 @@ import com.djh.location.list.service.SummaryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Filter;
+
+
 /**
  * @author David Hancock
  */
@@ -15,7 +19,12 @@ import org.springframework.context.annotation.Configuration;
 public class LocationListConfiguration {
 
     @Bean
-    LocationListDAO locationListDAO() {
+    public Filter resourceCORSFilter(){
+        return new ResourceCORSFilter();
+    }
+
+    @Bean
+    public LocationListDAO locationListDAO() {
         return new SimpleLocationListDAO();
     }
 

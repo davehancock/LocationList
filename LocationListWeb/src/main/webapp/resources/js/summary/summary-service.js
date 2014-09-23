@@ -1,4 +1,4 @@
-summaryModule.service("summaryService", ["$scope", "$http", function ($scope, $http) {
+summaryModule.service('summaryService',['$rootScope', '$http', function ($rootScope, $http) {
 
     var summaryItems = [
         {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
@@ -6,9 +6,9 @@ summaryModule.service("summaryService", ["$scope", "$http", function ($scope, $h
         {'desc': 'do something extra', 'location': 'bmouth', 'timestamp': '12:00'}
     ];
 
-//    this.getSummary = function () {
-//        return summaryItems;
-//    };
+    this.getSummary = function () {
+        return summaryItems;
+    };
 
     this.addSummaryItem = function (summaryItem) {
         summaryItems.push(summaryItem);
@@ -25,7 +25,7 @@ summaryModule.service("summaryService", ["$scope", "$http", function ($scope, $h
                 return data;
             }).
             error(function (data, status, headers, config) {
-                $scope.$broadcast('errorEvent', data);
+                $rootScope.$broadcast('error:http', status);
             });
     };
 

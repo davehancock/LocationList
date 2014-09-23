@@ -18,8 +18,8 @@ locationListApp.config(function ($routeProvider) {
         });
 });
 
+errorModule = angular.module('errorModule', ['ui.bootstrap']);
+
 mapModule = angular.module('mapModule', []);
 
 summaryModule = angular.module('summaryModule', ['ngGrid']);
-
-errorModule = angular.module('errorModule', ['ui.bootstrap']);
