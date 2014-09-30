@@ -1,4 +1,9 @@
-/.idea
-*/.idea
+.gradle
+build
+.idea
 *.iml
-*/build
+classes
+.directory
+*.iws
+*.ipr
+.DS_Store
