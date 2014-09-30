@@ -1,18 +1,19 @@
 package com.djh.location.list.core.dao;
 
 import com.djh.location.list.core.domain.SummaryItem;
-import com.djh.location.list.core.domain.SummaryItems;
+
+import java.util.List;
 
 /**
  * @author David Hancock
  */
 public interface LocationListDAO {
 
-    void saveSummaryItem(SummaryItem summaryItem);
+    SummaryItem saveSummaryItem(SummaryItem summaryItem);
 
     void deleteSummaryItem(String summaryItemId);
 
-    SummaryItems findAllSummaryItems();
+    List<SummaryItem> findAllSummaryItems();
 
     SummaryItem findSummaryItemById(String summaryItemId);
 

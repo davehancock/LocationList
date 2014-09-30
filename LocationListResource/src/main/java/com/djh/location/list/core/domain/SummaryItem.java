@@ -18,13 +18,12 @@ public class SummaryItem {
 
     public SummaryItem(){
         this.id = UUID.randomUUID();
-        this.timestamp = new Date();
     }
 
-    public SummaryItem(String description, String location, String time) {
+    public SummaryItem(String description, String location) {
+        this();
         this.description = description;
         this.location = location;
-        this.timestamp = new Date();
     }
 
     public UUID getId() {

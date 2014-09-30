@@ -2,7 +2,7 @@ apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 
-project.version = '0.0.1-SNAPSHOT'
+project.version = '0.0.2-SNAPSHOT'
 project.sourceCompatibility = 1.7
 
 buildscript {
@@ -28,14 +28,15 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-jetty")
-    compile("org.springframework.boot:spring-boot-starter-actuator")
-
-    compile("org.springframework.boot:spring-boot-starter-web") {
+    compile('org.springframework.boot:spring-boot-starter-jetty')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web') {
         exclude module: "spring-boot-starter-tomcat"
     }
 
-    testCompile("junit:junit:4.8.2")
+    testCompile('org.springframework:spring-test:4.1.0.RELEASE')
+    testCompile('org.mockito:mockito-all:1.8.4')
+    testCompile('junit:junit:4.9')
 }
 
 

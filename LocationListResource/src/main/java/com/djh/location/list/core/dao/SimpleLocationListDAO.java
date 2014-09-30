@@ -1,7 +1,6 @@
 package com.djh.location.list.core.dao;
 
 import com.djh.location.list.core.domain.SummaryItem;
-import com.djh.location.list.core.domain.SummaryItems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +18,9 @@ public class SimpleLocationListDAO implements LocationListDAO {
     private ConcurrentHashMap<UUID, SummaryItem> locationListItemMap = new ConcurrentHashMap<>();
 
     @Override
-    public void saveSummaryItem(SummaryItem summaryItem) {
+    public SummaryItem saveSummaryItem(SummaryItem summaryItem) {
         locationListItemMap.putIfAbsent(summaryItem.getId(), summaryItem);
+        return summaryItem;
     }
 
     @Override
@@ -28,10 +28,9 @@ public class SimpleLocationListDAO implements LocationListDAO {
         locationListItemMap.remove(summaryItemId);
     }
 
-    public SummaryItems findAllSummaryItems() {
+    public List<SummaryItem> findAllSummaryItems() {
         List<SummaryItem> summaryItemsList = new ArrayList<>(locationListItemMap.values());
-        SummaryItems summaryItems = new SummaryItems(summaryItemsList);
-        return summaryItems;
+        return summaryItemsList;
     }
 
     @Override

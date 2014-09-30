@@ -2,7 +2,10 @@ package com.djh.location.list.core.service;
 
 import com.djh.location.list.core.dao.LocationListDAO;
 import com.djh.location.list.core.domain.SummaryItem;
-import com.djh.location.list.core.domain.SummaryItems;
+
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author David Hancock
@@ -12,8 +15,9 @@ public class DefaultSummaryService implements SummaryService {
     private LocationListDAO locationListDAO;
 
     @Override
-    public void addSummaryItem(SummaryItem summaryItem) {
-        locationListDAO.saveSummaryItem(summaryItem);
+    public SummaryItem addSummaryItem(SummaryItem summaryItem) {
+        summaryItem.setTimestamp(new Date());
+        return locationListDAO.saveSummaryItem(summaryItem);
     }
 
     @Override
@@ -22,8 +26,9 @@ public class DefaultSummaryService implements SummaryService {
     }
 
     @Override
-    public SummaryItems findAllSummaryItems() {
-        return locationListDAO.findAllSummaryItems();
+    public List<SummaryItem> findAllSummaryItems() {
+        List<SummaryItem> summaryItemsList = locationListDAO.findAllSummaryItems();
+        return summaryItemsList;
     }
 
     @Override
