@@ -1,0 +1,41 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+project.version = '0.0.1-SNAPSHOT'
+project.sourceCompatibility = 1.7
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.6.RELEASE")
+    }
+}
+
+task copyArtifactForDeployment(type: Copy){
+    from("build/libs")
+    into("/deployment/jettyDeployment/LocationList")
+    include('*.jar');
+    rename ('LocationListResource(.*).jar', 'LocationListResource.jar')
+}
+
+copyArtifactForDeployment.dependsOn("jar");
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+
+    testCompile("junit:junit:4.8.2")
+}
+
+

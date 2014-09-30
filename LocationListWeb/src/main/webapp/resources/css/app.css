@@ -1,0 +1,105 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.middle {
+    text-align: center;
+}
+
+.outer-summary-container {
+    display: table;
+    height: 400px;
+    width: 100%;
+}
+
+.middle-summary-container {
+    display: table-cell;
+    vertical-align: middle;
+
+    height: 400px;
+    width: 700px;
+}
+
+.inner-summary-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 400px;
+    width: 700px;
+}
+
+.summary-input-group {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.summary-label {
+    margin-top: 5px;
+    float: left;
+    width: 50%;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.summary-input {
+    width: 50%;
+}
+
+.location-list-footer {
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Ng-Grid Styling */
+
+.gridStyle {
+    border: 2px solid rgb(0, 0, 0);
+    height: 300px;
+}
+
+.ngTopPanel {
+    background-color: #428bca !important;
+    color: #FFFFFF
+}
+
+.ngRow.even {
+    background-color: #C7EDF4 !important;
+}
+
+/* Sticky Footer Styling */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -50px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 50px;
+}
+
+#footer {
+    background-color: #428bca;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
