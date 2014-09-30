@@ -1,15 +1,11 @@
-summaryModule.factory('summaryFactory', function () {
+summaryModule.factory('Summary', function () {
 
-    var summaryItems = [
-        {'desc': 'do something', 'location': 'stoke', 'timestamp': '17:00'},
-        {'desc': 'do something more', 'location': 'bham', 'timestamp': '18:00'},
-        {'desc': 'do something extra', 'location': 'bmouth', 'timestamp': '12:00'}
-    ];
+    return
+        $resource('summary/:', {}, {
+        query: {method: 'GET', params: {phoneId: 'phones'}, isArray: true
 
-    return{
-        getSummary: function () {
-            return summaryItems;
+
+
         }
-    };
-
+    });
 });

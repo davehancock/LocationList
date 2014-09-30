@@ -4,12 +4,9 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', 'summary
         $scope.$route = $route;
 
         // Summary items service call and chained promise response
-        var currentSummaryItems = summaryService.getSummaryItems().then(function (response) {
+        $scope.updateSummaryItems = summaryService.getSummaryItems().then(function (response) {
             $scope.summaryItems = response.data.summaryItemList;
-        })
-
-        // Scoped handle to refresh items
-        $scope.updateSummaryItems = currentSummaryItems;
+        });
 
         // Underlying model for summary items
         $scope.summaryItems = {};
