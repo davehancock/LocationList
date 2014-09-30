@@ -1,4 +1,4 @@
-package com.djh.location.list.model;
+package com.djh.location.list.core.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;

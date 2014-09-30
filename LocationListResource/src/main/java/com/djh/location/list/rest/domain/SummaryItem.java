@@ -1,33 +1,29 @@
-package com.djh.location.list.model;
+package com.djh.location.list.rest.domain;
+
+import java.util.Date;
+import java.util.UUID;
 
 /**
  * @author David Hancock
  */
 public class SummaryItem {
 
-    private Long id;
+    private String id;
 
     private String description;
 
     private String location;
 
-    private String time;
+    private Date timestamp;
 
-    public SummaryItem(){
-
+    public SummaryItem() {
     }
 
-    public SummaryItem(String description, String location, String time) {
-        this.description = description;
-        this.location = location;
-        this.time = time;
-    }
-
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -47,11 +43,11 @@ public class SummaryItem {
         this.location = location;
     }
 
-    public String getTime() {
-        return time;
+    public Date getTimestamp() {
+        return timestamp;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 }

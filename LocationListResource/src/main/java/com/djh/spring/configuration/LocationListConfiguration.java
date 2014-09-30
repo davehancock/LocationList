@@ -1,11 +1,11 @@
 package com.djh.spring.configuration;
 
 import com.djh.filter.ResourceCORSFilter;
-import com.djh.location.list.dao.LocationListDAO;
-import com.djh.location.list.dao.SimpleLocationListDAO;
-import com.djh.location.list.resource.SummaryResource;
-import com.djh.location.list.service.DefaultSummaryService;
-import com.djh.location.list.service.SummaryService;
+import com.djh.location.list.core.dao.LocationListDAO;
+import com.djh.location.list.core.dao.SimpleLocationListDAO;
+import com.djh.location.list.rest.controller.SummaryResource;
+import com.djh.location.list.core.service.DefaultSummaryService;
+import com.djh.location.list.core.service.SummaryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
