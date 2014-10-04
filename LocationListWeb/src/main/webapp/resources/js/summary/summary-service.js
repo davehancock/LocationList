@@ -1,4 +1,4 @@
-summaryModule.service('summaryService', ['$rootScope', 'ngResource', function ($rootScope, ngResource) {
+summaryModule.service('summaryService', ['$rootScope', function ($rootScope) {
 
     this.addSummaryItem = function (summaryItem) {
         summaryItems.push(summaryItem);

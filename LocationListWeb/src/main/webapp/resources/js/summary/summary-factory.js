@@ -1,4 +1,4 @@
-summaryModule.factory('Summary', function () {
+summaryModule.factory('Summary', ['ngResource', function (ngResource) {
 
     return
     $resource('summary/:', {}, {
@@ -6,4 +6,4 @@ summaryModule.factory('Summary', function () {
 
         }
     });
-});
+}]);
