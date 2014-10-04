@@ -17,9 +17,6 @@ summaryModule.service('summaryService', ['$rootScope', 'ngResource', function ($
         summaryItems.splice(0, 1);
     };
 
-
-
-
     this.getSummaryItems = function () {
 
         return $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).

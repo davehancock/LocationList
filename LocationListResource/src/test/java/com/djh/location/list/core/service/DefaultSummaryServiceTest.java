@@ -3,15 +3,12 @@ package com.djh.location.list.core.service;
 import com.djh.location.list.core.dao.LocationListDAO;
 import com.djh.location.list.core.domain.SummaryItem;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import java.util.UUID;
 
 /**
  * @author David Hancock

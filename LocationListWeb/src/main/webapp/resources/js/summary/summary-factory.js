@@ -1,10 +1,8 @@
 summaryModule.factory('Summary', function () {
 
     return
-        $resource('summary/:', {}, {
+    $resource('summary/:', {}, {
         query: {method: 'GET', params: {phoneId: 'phones'}, isArray: true
-
-
 
         }
     });

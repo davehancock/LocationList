@@ -43,7 +43,6 @@ public class SummaryResource {
     @RequestMapping(method = RequestMethod.GET)
     public SummaryItems getAllSummaryItems() {
 
-
         List<SummaryItem> summaryItemList = summaryService.findAllSummaryItems();
 
         // TODO Refine model indirection
