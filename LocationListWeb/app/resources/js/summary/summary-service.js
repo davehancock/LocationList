@@ -2,6 +2,8 @@ summaryModule.service('summaryService', ['$rootScope', '$http', '$location', fun
 
     const PORT = '8089';
 
+    // '178.62.11.210'
+    // $location.host();
     const HOST = $location.host();
 
     const URL = 'http://' + HOST + ':' + PORT + '/summary/';

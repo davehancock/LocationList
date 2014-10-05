@@ -2,7 +2,9 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'cargo'
 
-project.version = '0.0.4-SNAPSHOT'
+project.version = '0.0.5-SNAPSHOT'
+project.webAppDirName = "app"
+
 war.baseName = 'LocationListWeb'
 
 repositories {
@@ -25,7 +27,7 @@ cargo {
     port = 9125
 
     deployable {
-        context = 'LocationListCargo'
+        context = 'LocationListWeb'
     }
 
     remote {
