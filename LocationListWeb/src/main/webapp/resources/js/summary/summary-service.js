@@ -1,11 +1,13 @@
-summaryModule.service('summaryService', ['$rootScope', function ($rootScope) {
+summaryModule.service('summaryService', ['$rootScope', '$http', '$location', function ($rootScope, $http, $location) {
 
-    this.addSummaryItem = function (summaryItem) {
-        summaryItems.push(summaryItem);
-    };
+    const PORT = '8089';
 
-    this.addSummaryItem = function (summaryItem) {
-        return $http({method: 'POST', url: 'http://178.62.11.210:8089/summary'}).
+    const HOST = $location.host();
+
+    const URL = 'http://' + HOST + ':' + PORT + '/summary/';
+
+    this.editSummaryItem = function (summaryItem) {
+        return $http({method: 'PUT', url: URL + summaryItem.id, data: summaryItem}).
             success(function (data) {
                 return data;
             }).error(function (data, status, headers, config) {
@@ -13,13 +15,26 @@ summaryModule.service('summaryService', ['$rootScope', function ($rootScope) {
             });
     };
 
-    this.deleteSummaryItem = function () {
-        summaryItems.splice(0, 1);
+    this.addSummaryItem = function (summaryItem) {
+        return $http({method: 'POST', url: URL, data: summaryItem}).
+            success(function (data) {
+                return data;
+            }).error(function (data, status, headers, config) {
+                $rootScope.$broadcast('error:http', status);
+            });
+    };
+
+    this.deleteSummaryItem = function (summaryItemId) {
+        return $http({method: 'DELETE', url: URL + summaryItemId}).
+            success(function (data) {
+                return data;
+            }).error(function (data, status, headers, config) {
+                $rootScope.$broadcast('error:http', status);
+            });
     };
 
     this.getSummaryItems = function () {
-
-        return $http({method: 'GET', url: 'http://178.62.11.210:8089/summary'}).
+        return $http({method: 'GET', url: URL}).
             success(function (data) {
                 return data;
             }).error(function (data, status, headers, config) {

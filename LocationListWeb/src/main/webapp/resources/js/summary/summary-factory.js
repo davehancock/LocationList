@@ -1,4 +1,4 @@
-summaryModule.factory('Summary', ['ngResource', function (ngResource) {
+summaryModule.factory('Summary', ['$resource', function ($resource) {
 
     return
     $resource('summary/:', {}, {

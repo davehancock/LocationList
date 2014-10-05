@@ -25,7 +25,7 @@ public class SimpleLocationListDAO implements LocationListDAO {
 
     @Override
     public void deleteSummaryItem(String summaryItemId) {
-        locationListItemMap.remove(summaryItemId);
+        locationListItemMap.remove(UUID.fromString(summaryItemId));
     }
 
     public List<SummaryItem> findAllSummaryItems() {

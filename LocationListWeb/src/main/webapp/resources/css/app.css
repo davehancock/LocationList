@@ -68,6 +68,10 @@
     background-color: #C7EDF4 !important;
 }
 
+.ngRow.selected {
+    background-color: #6D8084 !important;
+}
+
 /* Sticky Footer Styling */
 html,
 body {
