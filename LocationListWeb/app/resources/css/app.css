@@ -19,20 +19,20 @@
 
 .outer-summary-container {
     display: table;
-    height: 400px;
+    height: 500px;
     width: 100%;
 }
 
 .middle-summary-container {
     display: table-cell;
     vertical-align: middle;
-    height: 400px;
+    height: 500px;
 }
 
 .inner-summary-container {
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
+    height: 500px;
 }
 
 .summary-input-group {
@@ -61,10 +61,10 @@
 
 /* Ng-Grid Styling */
 
-
 .gridStyle {
-    border: 2px solid rgb(0, 0, 0);
-    height: 300px;
+    border-top: 1px solid #b3b8bc;
+    border-bottom: 1px solid #b3b8bc;
+    height: 500px;
 }
 
 .ngTopPanel {

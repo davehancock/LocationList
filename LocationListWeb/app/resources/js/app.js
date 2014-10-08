@@ -18,6 +18,14 @@ locationListApp.config(function ($routeProvider) {
         });
 });
 
+locationListApp.controller("navCtrl", ["$scope", "$route", "summaryService", function ($scope, $route, summaryService) {
+
+    $scope.$route = $route;
+
+    $scope.listItems = summaryService.getSummaryItems();
+
+}]);
+
 errorModule = angular.module('errorModule', ['ui.bootstrap']);
 
 mapModule = angular.module('mapModule', ['google-maps', 'geolocation']);

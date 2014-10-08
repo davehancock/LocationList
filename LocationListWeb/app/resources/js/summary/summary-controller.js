@@ -13,7 +13,7 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             modalInstance.result.then(function (selectedItem) {
                 $scope.selected = selectedItem;
             }, function () {
-               // TODO Edit Summary Values / Refresh Grid
+                // TODO Edit Summary Values / Refresh Grid
             });
         }
 
@@ -34,7 +34,7 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             data: 'summaryItems',
             selectedItems: selectedSummaryItem,
             multiSelect: false,
-            rowHeight: 60,
+            rowHeight: 50,
             rowTemplate: 'resources/html/summary/grid/customRowTemplate.html',
             columnDefs: [
                 {field: 'description', displayName: 'Description'},
