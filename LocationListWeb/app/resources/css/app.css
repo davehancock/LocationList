@@ -2,6 +2,17 @@
     display: none !important;
 }
 
+.loc-list-header {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+    background-color: #428bca;
+    border-bottom: 2px solid #b3b8bc;
+
+    overflow: hidden;
+    height: 100px;
+}
+
 .middle {
     text-align: center;
 }
@@ -15,17 +26,13 @@
 .middle-summary-container {
     display: table-cell;
     vertical-align: middle;
-
     height: 400px;
-    width: 700px;
 }
 
 .inner-summary-container {
     margin-left: auto;
     margin-right: auto;
-
     height: 400px;
-    width: 700px;
 }
 
 .summary-input-group {
@@ -54,6 +61,7 @@
 
 /* Ng-Grid Styling */
 
+
 .gridStyle {
     border: 2px solid rgb(0, 0, 0);
     height: 300px;
@@ -62,6 +70,12 @@
 .ngTopPanel {
     background-color: #428bca !important;
     color: #FFFFFF
+}
+
+.ngRowFormat {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
 
 .ngRow.even {

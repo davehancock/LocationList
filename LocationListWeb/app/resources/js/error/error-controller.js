@@ -1,9 +1,9 @@
-summaryModule.controller("errorCtrl", ['$scope', '$modal', function ($scope, $modal) {
+errorModule.controller("errorCtrl", ['$scope', '$modal', function ($scope, $modal) {
 
     $scope.$on('error:http', function (event, status) {
 
         var modalInstance = $modal.open({
-            templateUrl: 'resources/html/errorModal.html',
+            templateUrl: 'resources/html/error/errorModal.html',
             controller: ErrorModalInstanceCtrl,
             resolve: {
                 statusCode: function() {

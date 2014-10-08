@@ -7,6 +7,7 @@ project.webAppDirName = "app"
 
 war.baseName = 'LocationListWeb'
 
+
 repositories {
     mavenCentral()
 }
@@ -19,6 +20,10 @@ buildscript {
     repositories {
         jcenter()
     }
+}
+
+jettyRun {
+    stopPort = 8088;
 }
 
 // Tomcat Remote Deploy
