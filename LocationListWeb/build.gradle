@@ -2,7 +2,9 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'cargo'
 
+project.group = 'com.djh.locationlist'
 project.version = '0.0.5-SNAPSHOT'
+
 project.webAppDirName = "app"
 
 war.baseName = 'LocationListWeb'

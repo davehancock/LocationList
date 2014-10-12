@@ -1,6 +1,6 @@
 package com.djh.location.list.rest.controller;
 
-import com.djh.spring.configuration.LocationListConfiguration;
+import com.djh.spring.configuration.LocationListResourceConfiguration;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
  * @author David Hancock
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {LocationListConfiguration.class})
+@ContextConfiguration(classes = {LocationListResourceConfiguration.class})
 public class AddNewSummaryItemIntegrationTest {
 
     private static final String NEW_SUMMARY_ITEM_JSON = "{\"description\": \"do something\", \"location\": \"stoke\"}";

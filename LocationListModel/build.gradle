@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+project.group = 'com.djh.locationlist'
+project.version = '0.0.5-SNAPSHOT'
+
+project.sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+

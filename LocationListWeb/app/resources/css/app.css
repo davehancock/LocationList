@@ -20,7 +20,7 @@
 .outer-summary-container {
     display: table;
     height: 500px;
-    width: 100%;
+    width: 90%;
 }
 
 .middle-summary-container {
@@ -37,7 +37,7 @@
 
 .summary-input-group {
     margin-top: 25px;
-    width: 100%;
+    width: 90%;
 }
 
 .summary-label {

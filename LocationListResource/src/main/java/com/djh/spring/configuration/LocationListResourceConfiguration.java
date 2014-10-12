@@ -16,7 +16,7 @@ import javax.servlet.Filter;
  * @author David Hancock
  */
 @Configuration
-public class LocationListConfiguration {
+public class LocationListResourceConfiguration {
 
     @Bean
     public Filter resourceCORSFilter(){
