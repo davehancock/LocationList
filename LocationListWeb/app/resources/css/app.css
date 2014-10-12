@@ -20,13 +20,14 @@
 .outer-summary-container {
     display: table;
     height: 500px;
-    width: 90%;
+    width: 100%;
 }
 
 .middle-summary-container {
     display: table-cell;
     vertical-align: middle;
     height: 500px;
+    width: 90%;
 }
 
 .inner-summary-container {
