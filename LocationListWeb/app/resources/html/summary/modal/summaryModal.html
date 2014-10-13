@@ -4,9 +4,48 @@
     </div>
     <div class="modal-body">
         <p>Edit The Summary Below:</p>
+
+        <div class="outer-summary-container">
+            <div class="middle-summary-container">
+                <div class="inner-summary-container">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="summary-label">Description:</div>
+                            </td>
+                            <td>
+                                <div class="summary-input input-group">
+                                    <input type="text" class="form-control" ng-model="listItem.description"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="summary-label">Location:</div>
+                            </td>
+                            <td>
+                                <div class="summary-input input-group">
+                                    <input type="text" class="form-control" ng-model="listItem.location"/>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="summary-label">Time:</div>
+                            </td>
+                            <td>
+                                <div class="summary-input input-group">
+                                    <input type="text" class="form-control" ng-model="listItem.timestamp"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="modal-footer">
-        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-primary" ng-click="ok()">Save</button>
         <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
     </div>
 </div>

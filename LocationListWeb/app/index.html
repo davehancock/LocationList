@@ -1,5 +1,8 @@
 <html>
 <head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="resources/css/app.css">
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css"/>
@@ -9,8 +12,8 @@
 
 <header class="loc-list-header">
     <div>
-        <h1>Location List
-            <small style="color: #C2ABAB">List What, Where and When</small>
+        <h1 class="loc-list-script">Location List
+            <small style="color:#FFFFFF">List What, Where and When</small>
         </h1>
     </div>
 </header>
@@ -19,7 +22,7 @@
 
 <div id="wrap" ng-controller="errorCtrl">
     <div ng-controller="navCtrl">
-        <ul class="nav nav-pills nav-justified">
+        <ul class="custom-nav-pills nav nav-pills nav-justified loc-list-script">
             <li ng-class="{active: $route.current.activeTab == 'summaryTab'}">
                 <a ng-href='#/summary'>
                     <span class="badge pull-right">{{listItems.length}}</span>
@@ -36,9 +39,8 @@
 </div>
 
 <div id="footer">
-    <div class="container">
+    <div class="container loc-list-script">
         <p class="location-list-footer pull-left">&copy 2014 DJH Technologies</p>
-
         <p class="location-list-footer pull-right">LocationList</p>
     </div>
 </div>

@@ -31,13 +31,13 @@ public class SummaryResource {
         return summaryItemRest.fromSummaryItem(summaryItemResult);
     }
 
-    @RequestMapping(value = "/{summaryItemId}", method = RequestMethod.PUT)
-    public void updateSummaryItem(@PathVariable String summaryItemId, @RequestBody SummaryItemRest summaryItemRest) {
+    @RequestMapping(method = RequestMethod.PUT)
+    public void updateSummaryItem(@RequestBody SummaryItemRest summaryItemRest) {
 
         // TODO Refine model indirection
         SummaryItem summaryItem = summaryItemRest.toSummaryItem();
 
-        summaryService.updateSummaryItem(summaryItemId, summaryItem);
+        summaryService.updateSummaryItem(summaryItem);
     }
 
     @RequestMapping(method = RequestMethod.GET)

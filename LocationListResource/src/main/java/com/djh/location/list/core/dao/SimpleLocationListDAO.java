@@ -28,14 +28,17 @@ public class SimpleLocationListDAO implements LocationListDAO {
         locationListItemMap.remove(UUID.fromString(summaryItemId));
     }
 
+    @Override
     public List<SummaryItem> findAllSummaryItems() {
         List<SummaryItem> summaryItemsList = new ArrayList<>(locationListItemMap.values());
         return summaryItemsList;
     }
 
     @Override
-    public SummaryItem findSummaryItemById(String summaryItemId) {
-        return locationListItemMap.get(summaryItemId);
+    public SummaryItem updateSummaryItem(SummaryItem summaryItem) {
+        locationListItemMap.put(summaryItem.getId(), summaryItem);
+        return summaryItem;
     }
+
 
 }

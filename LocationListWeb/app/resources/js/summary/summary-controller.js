@@ -3,20 +3,6 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
 
         $scope.$route = $route;
 
-        $scope.editSummaryItem = function () {
-
-            var modalInstance = $modal.open({
-                templateUrl: 'resources/html/summary/modal/summaryModal.html',
-                controller: 'summaryModalCtrl'
-            });
-
-            modalInstance.result.then(function (selectedItem) {
-                $scope.selected = selectedItem;
-            }, function () {
-                // TODO Edit Summary Values / Refresh Grid
-            });
-        }
-
         // Summary items service call and chained promise response
         var updateSummaryItems = function () {
             summaryService.getSummaryItems().then(function (response) {
@@ -24,18 +10,19 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             });
         }
 
-        // Currently selected item from ngGrid, Array of a single SummaryItem object
-        var selectedSummaryItem = [];
-
         // Underlying model for summary items
         $scope.summaryItems = updateSummaryItems();
 
+        // Item that was last selected within the summary grid
+        var currentlySelectedItem = [];
+
+        // Ng-grid configuration
         $scope.gridOptions = {
             data: 'summaryItems',
-            selectedItems: selectedSummaryItem,
             multiSelect: false,
             rowHeight: 50,
-            rowTemplate: 'resources/html/summary/grid/customRowTemplate.html',
+            selectedItems: currentlySelectedItem,
+            rowTemplate: 'resources/html/summary/grid/summaryRowTemplate.html',
             columnDefs: [
                 {field: 'description', displayName: 'Description'},
                 {field: 'location', displayName: 'Location'},
@@ -43,6 +30,10 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             ]
         };
 
+        /**
+         *
+         * @param description
+         */
         $scope.addSummaryItem = function (description) {
 
             var summaryItem = {description: description, location: "new loc"};
@@ -56,9 +47,13 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             $scope.description = null;
         };
 
+        /**
+         *
+         * @param summaryItem
+         */
         $scope.deleteSummaryItem = function () {
 
-            var summaryItemId = selectedSummaryItem[0].id;
+            var summaryItemId = currentlySelectedItem[0].id;
 
             summaryService.deleteSummaryItem(summaryItemId).then(function (response) {
                 angular.forEach($scope.summaryItems, function (key, value) {
@@ -69,13 +64,60 @@ summaryModule.controller('summaryCtrl', ['$scope', '$route', '$filter', '$modal'
             });
         };
 
+        /**
+         *
+         * @param summaryItem
+         */
+        $scope.editSummaryItem = function () {
+
+            var selectedItem = currentlySelectedItem[0];
+
+            var modalInstance = $modal.open({
+                templateUrl: 'resources/html/summary/modal/summaryModal.html',
+                controller: 'summaryModalCtrl',
+                resolve: {
+                    listItem: function () {
+                        return selectedItem;
+                    }
+                }
+            });
+
+            modalInstance.result.then(function (listItem) {
+                editSummaryItem(listItem);
+
+            }, function () {
+                // TODO NO-OP
+            });
+        }
+
+        /**
+         *
+         * @param listItem
+         */
+        var editSummaryItem = function (listItem) {
+
+            // Make a call to the summary service to edit an item.
+            summaryService.editSummaryItem(listItem).then(function (response) {
+
+                var summaryItem = response.data;
+
+                // Find and replace original item in summaryItems list with selectedItem
+                angular.forEach($scope.summaryItems, function (value, index) {
+                    if (value.id === summaryItem.id) {
+                        $scope.summaryItems[index] = summaryItem;
+                    }
+                });
+            });
+        }
     }]);
 
-summaryModule.controller('summaryModalCtrl', ['$scope', '$modalInstance',
-    function ($scope, $modalInstance) {
+summaryModule.controller('summaryModalCtrl', ['$scope', '$modalInstance', 'listItem',
+    function ($scope, $modalInstance, listItem) {
+
+        $scope.listItem = listItem;
 
         $scope.ok = function () {
-            $modalInstance.close();
+            $modalInstance.close($scope.listItem);
         };
 
         $scope.cancel = function () {

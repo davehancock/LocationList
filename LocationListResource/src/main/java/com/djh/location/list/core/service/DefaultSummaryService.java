@@ -32,8 +32,8 @@ public class DefaultSummaryService implements SummaryService {
     }
 
     @Override
-    public void updateSummaryItem(String summaryItemId, SummaryItem summaryItem) {
-        // NO-OP TODO
+    public SummaryItem updateSummaryItem(SummaryItem summaryItem) {
+        return locationListDAO.updateSummaryItem(summaryItem);
     }
 
     public void setLocationListDAO(LocationListDAO locationListDAO) {

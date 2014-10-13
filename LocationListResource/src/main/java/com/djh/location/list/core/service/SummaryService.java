@@ -16,6 +16,6 @@ public interface SummaryService {
 
     public void deleteSummaryItem(String summaryItemId);
 
-    public void updateSummaryItem(String summaryItemId, SummaryItem summaryItem);
+    public SummaryItem updateSummaryItem(SummaryItem summaryItem);
 
 }

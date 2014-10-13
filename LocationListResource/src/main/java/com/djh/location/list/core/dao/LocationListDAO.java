@@ -15,6 +15,6 @@ public interface LocationListDAO {
 
     List<SummaryItem> findAllSummaryItems();
 
-    SummaryItem findSummaryItemById(String summaryItemId);
+    SummaryItem updateSummaryItem(SummaryItem summaryItem);
 
 }

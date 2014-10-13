@@ -7,7 +7,7 @@ summaryModule.service('summaryService', ['$rootScope', '$http', '$location', fun
     const URL = 'http://' + HOST + ':' + PORT + '/summary/';
 
     this.editSummaryItem = function (summaryItem) {
-        return $http({method: 'PUT', url: URL + summaryItem.id, data: summaryItem}).
+        return $http({method: 'PUT', url: URL, data: summaryItem}).
             success(function (data) {
                 return data;
             }).error(function (data, status, headers, config) {
