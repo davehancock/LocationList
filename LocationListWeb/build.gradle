@@ -1,6 +1,7 @@
 apply plugin: 'war'
-apply plugin: 'jetty'
+//apply plugin: 'jetty'
 apply plugin: 'cargo'
+apply plugin: 'org.akhikhl.gretty'
 
 project.group = 'com.djh.locationlist'
 project.version = '0.0.5-SNAPSHOT'
@@ -9,6 +10,21 @@ project.webAppDirName = "app"
 
 war.baseName = 'LocationListWeb'
 
+jettyRun.jettyConfig = file('jetty.xml')
+jettyRun.httpPort = 8081
+jettyRun.contextPath = '/'
+jettyRun.stopPort = 8090
+jettyRun.stopKey = 'stopKey'
+
+jettyRunWar.jettyConfig = file('jetty.xml')
+jettyRunWar.httpPort = 8081
+jettyRunWar.contextPath = '/'
+jettyRunWar.daemon = true
+jettyRunWar.stopPort = 8090
+jettyRunWar.stopKey = 'stopKey'
+
+jettyStop.stopPort = 8090
+jettyStop.stopKey = 'stopKey'
 
 repositories {
     mavenCentral()
@@ -17,15 +33,12 @@ repositories {
 buildscript {
     dependencies {
         classpath 'org.gradle.api.plugins:gradle-cargo-plugin:1.5.1'
+        classpath 'org.akhikhl.gretty:gretty:+'
     }
 
     repositories {
         jcenter()
     }
-}
-
-jettyRun {
-    stopPort = 8088;
 }
 
 // Tomcat Remote Deploy
@@ -42,5 +55,9 @@ cargo {
         username = 'tomcat125'
         password = 'tomcat125'
     }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
 }
 

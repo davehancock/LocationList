@@ -41,4 +41,7 @@ dependencies {
     testCompile('junit:junit:4.9')
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
 
