@@ -1,11 +1,11 @@
 apply plugin: 'java'
-apply plugin: 'maven'
 apply plugin: 'spring-boot'
 
 project.group = 'com.djh.locationlist'
 project.version = '0.0.5-SNAPSHOT'
 
 project.sourceCompatibility = 1.7
+
 
 buildscript {
     repositories {
@@ -16,17 +16,22 @@ buildscript {
     }
 }
 
+task copyArtifactForDeployment(type: Copy){
+    from("build/libs")
+    into("/deployment/jettyDeployment/LocationList")
+    include('*.jar');
+    rename ('LocationListBackend(.*).jar', 'LocationListBackend.jar')
+}
+
+copyArtifactForDeployment.dependsOn("jar");
+
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-
-    compile('com.djh.locationlist:LocationListModel:0.0.5-SNAPSHOT');
-
-    compile "org.springframework.boot:spring-boot-starter-data-jpa"
     compile('org.springframework.boot:spring-boot-starter-jetty')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-web') {
         exclude module: "spring-boot-starter-tomcat"
     }

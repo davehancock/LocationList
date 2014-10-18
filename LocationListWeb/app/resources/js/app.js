@@ -1,6 +1,8 @@
 locationListApp = angular.module('locationListApp', ['ngRoute', 'mapModule', 'summaryModule', 'errorModule', 'ngGrid', 'ui.bootstrap', 'ngResource', 'google-maps', 'geolocation']);
 
-locationListApp.config(function ($routeProvider) {
+locationListApp.config(function ($routeProvider, $locationProvider) {
+
+    $locationProvider.html5Mode(true);
 
     $routeProvider
         .when('/summary', {

@@ -24,13 +24,13 @@
     <div ng-controller="navCtrl">
         <ul class="custom-nav-pills nav nav-pills nav-justified loc-list-script">
             <li ng-class="{active: $route.current.activeTab == 'summaryTab'}">
-                <a ng-href='#/summary'>
+                <a ng-href='/summary'>
                     <span class="badge pull-right">{{listItems.length}}</span>
                     Summary
                 </a>
             </li>
             <li ng-class="{active: $route.current.activeTab == 'mapTab'}">
-                <a ng-href='#/map'>Map</a>
+                <a ng-href='/map'>Map</a>
             </li>
         </ul>
     </div>
