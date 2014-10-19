@@ -20,13 +20,13 @@
     <!-- Set connectors                                              -->
     <!-- =========================================================== -->
 
-    <Call name="addConnector">
-        <Arg>
-            <New class="org.eclipse.jetty.server.bio.SocketConnector">
-                <Set name="port">8080</Set>
-            </New>
-        </Arg>
-    </Call>
+    <!--<Call name="addConnector">-->
+        <!--<Arg>-->
+            <!--<New class="org.eclipse.jetty.server.bio.SocketConnector">-->
+                <!--<Set name="port">8080</Set>-->
+            <!--</New>-->
+        <!--</Arg>-->
+    <!--</Call>-->
 
     <!-- =========================================================== -->
     <!-- Set handler Collection Structure                            -->

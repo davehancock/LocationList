@@ -1,5 +1,6 @@
 apply plugin: 'war'
-apply plugin: 'org.akhikhl.gretty'
+//apply plugin: 'org.akhikhl.gretty'
+apply from: 'https://raw.githubusercontent.com/akhikhl/gretty/master/pluginScripts/gretty-SNAPSHOT.plugin'
 
 project.group = 'com.foo.bar'
 project.version = '0.0.1-SNAPSHOT'
@@ -7,7 +8,8 @@ project.webAppDirName = "app"
 
 gretty {
     contextPath = "/"
-    servletContainer = 'jetty7';
+    servletContainer = 'jetty7'
+    serverConfigFile = 'jetty.xml'
 }
 
 dependencies {
@@ -18,16 +20,16 @@ repositories {
     mavenCentral()
 }
 
-buildscript {
-    dependencies {
-        classpath 'org.akhikhl.gretty:gretty:+'
-    }
-
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-}
+//buildscript {
+//    dependencies {
+//        classpath 'org.akhikhl.gretty:gretty:+'
+//    }
+//
+//    repositories {
+//        mavenCentral()
+//        jcenter()
+//    }
+//}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.1'
