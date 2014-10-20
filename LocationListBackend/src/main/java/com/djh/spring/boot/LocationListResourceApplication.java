@@ -18,6 +18,6 @@ public class LocationListResourceApplication {
     public static void main(String... args) {
 
         SpringApplication.run(LocationListResourceApplication.class, args);
-        LOG.info("Location List Resource Started Successfully");
+        LOG.info("Location List Backend Started Successfully");
     }
 }
