@@ -7,6 +7,7 @@ project.version = '0.0.5-SNAPSHOT'
 project.webAppDirName = "app"
 
 gretty {
+    port = 9125
     contextPath = "/"
 }
 
