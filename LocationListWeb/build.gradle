@@ -8,7 +8,7 @@ project.webAppDirName = "app"
 
 gretty {
     port = 9125
-    contextPath = "/"
+    contextPath = "/a"
 }
 
 dependencies {
