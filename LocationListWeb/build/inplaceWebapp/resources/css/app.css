@@ -1,0 +1,135 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.loc-list-script {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.loc-list-header {
+    background-color: #57A6E8;
+    border-bottom: 1px solid #b3b8bc;
+
+    overflow: hidden;
+    height: 100px;
+}
+
+.nav {
+    border-bottom: 1px solid #b3b8bc;
+}
+
+/* Navigation Pill Tabs */
+.custom-nav-pills > li.active > a {
+    background-color: #57A6E8 !important;
+    border-radius: 0px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.outer-summary-container {
+    display: table;
+    width: 100%;
+}
+
+.middle-summary-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner-summary-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.summary-input-group {
+    margin-top: 25px;
+    width: 90%;
+}
+
+.summary-label {
+    margin-top: 5px;
+    float: left;
+    width: 50%;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.summary-input {
+    width: 50%;
+}
+
+.location-list-footer {
+    margin-top: 10px;
+}
+
+/* Ng-Grid Styling */
+.gridStyle {
+    border: 1px solid #b3b8bc;
+    height: 500px;
+}
+
+.ngTopPanel {
+    background-color: #57A6E8 !important;
+    color: #FFFFFF
+}
+
+.ngRowFormat {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ngRow.even {
+    background-color: #C7EDF4 !important;
+}
+
+.ngRow.selected {
+    background-color: #6D8084 !important;
+}
+
+/* Google Map Styling */
+.angular-google-map-container {
+    border: 1px solid #b3b8bc;
+    height: 600px;
+}
+
+/* Sticky Footer Styling */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -50px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 50px;
+}
+
+#footer {
+    background-color: #57A6E8;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

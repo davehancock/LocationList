@@ -1,0 +1,105 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest" tests="1" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="localhost" time="1.413147732667E9">
+  <properties/>
+  <testcase name="testAddSummaryItem" classname="com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest" time="0.141"/>
+  <system-out><![CDATA[22:02:12.474 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest].
+22:02:12.475 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+22:02:12.479 [Test worker] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@997f31b declaringClass = 'com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest', classes = '{class com.djh.spring.configuration.LocationListResourceConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+22:02:12.480 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.480 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]: using defaults.
+22:02:12.497 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:02:12.500 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:02:12.501 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:02:12.501 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7843c587, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@295d5fc0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31394b77]
+22:02:12.501 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.501 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.502 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.511 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.512 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.512 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.512 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.513 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest]
+22:02:12.517 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@5575ccf9 testClass = GetAllSummaryItemsIntegrationTest, testInstance = com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest@28e41b44, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@17ba2255 testClass = GetAllSummaryItemsIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListResourceConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+22:02:12.517 [Test worker] DEBUG o.s.t.c.DefaultCacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@17ba2255 testClass = GetAllSummaryItemsIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListResourceConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+22:02:12.523 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean 'com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest': AutowiredFieldElement for private com.djh.location.list.core.dao.LocationListDAO com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest.locationListDAO
+22:02:12.524 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListDAO'
+22:02:12.524 [Test worker] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest' to bean named 'locationListDAO'
+22:02:12.524 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean 'com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest': AutowiredFieldElement for private com.djh.location.list.rest.controller.SummaryResource com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest.summaryResource
+22:02:12.525 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'summaryResource'
+22:02:12.525 [Test worker] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest' to bean named 'summaryResource'
+22:02:12.528 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:02:12.528 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:02:12.528 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+22:02:12.537 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.djh.location.list.rest.domain.SummaryItems com.djh.location.list.rest.controller.SummaryResource.getAllSummaryItems()
+22:02:12.537 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.djh.location.list.rest.domain.SummaryItemRest com.djh.location.list.rest.controller.SummaryResource.addSummaryItem(com.djh.location.list.rest.domain.SummaryItemRest)
+22:02:12.537 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary/{summaryItemId}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.djh.location.list.rest.controller.SummaryResource.deleteSummaryItem(java.lang.String)
+22:02:12.537 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary/{summaryItemId}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.djh.location.list.rest.controller.SummaryResource.updateSummaryItem(java.lang.String,com.djh.location.list.rest.domain.SummaryItemRest)
+22:02:12.557 [Test worker] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+22:02:12.557 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+22:02:12.557 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy27
+22:02:12.558 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+22:02:12.559 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+22:02:12.564 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@58526b3f
+22:02:12.580 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+22:02:12.586 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+22:02:12.586 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+22:02:12.586 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+22:02:12.587 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:02:12.587 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:02:12.587 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+22:02:12.587 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+22:02:12.587 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+22:02:12.587 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+22:02:12.587 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@56f8233]
+22:02:12.587 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@5bcce50e]
+22:02:12.588 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68d22937]
+22:02:12.588 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@3d900fa4]
+22:02:12.588 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+22:02:12.588 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1 ms
+22:02:12.588 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+22:02:12.589 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/summary]
+22:02:12.608 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /summary
+22:02:12.609 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public com.djh.location.list.rest.domain.SummaryItems com.djh.location.list.rest.controller.SummaryResource.getAllSummaryItems()]
+22:02:12.610 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/summary] is: -1
+22:02:12.628 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.djh.location.list.rest.domain.SummaryItems@5ed50f46] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@37fd4792]
+22:02:12.628 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+22:02:12.628 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = GET
+         Request URI = /summary
+          Parameters = {}
+             Headers = {Content-Type=[application/json], Accept=[application/json]}
+
+             Handler:
+                Type = com.djh.location.list.rest.controller.SummaryResource
+              Method = public com.djh.location.list.rest.domain.SummaryItems com.djh.location.list.rest.controller.SummaryResource.getAllSummaryItems()
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = null
+                View = null
+               Model = null
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {Content-Type=[application/json;charset=UTF-8]}
+        Content type = application/json;charset=UTF-8
+                Body = {"summaryItemRestList":[{"id":"42ac5456-94ab-4950-8a54-43caad79aeef","description":"Desc2","location":"Loc2","timestamp":null},{"id":"d0e6b60b-6261-4bd6-a296-5b0d70d547dc","description":"Desc1","location":"Loc1","timestamp":null},{"id":"ab68e58b-1c30-425a-882f-636511156e07","description":"do something","location":"stoke","timestamp":1413147732348}]}
+       Forwarded URL = null
+      Redirected URL = null
+             Cookies = []
+22:02:12.656 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@5575ccf9 testClass = GetAllSummaryItemsIntegrationTest, testInstance = com.djh.location.list.rest.controller.GetAllSummaryItemsIntegrationTest@28e41b44, testMethod = testAddSummaryItem@GetAllSummaryItemsIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@17ba2255 testClass = GetAllSummaryItemsIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListResourceConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+22:02:12.668 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@5575ccf9 testClass = GetAllSummaryItemsIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@17ba2255 testClass = GetAllSummaryItemsIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListResourceConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

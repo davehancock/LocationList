@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.djh.location.list.core.service.DefaultSummaryServiceTest" tests="1" failures="0" errors="0" timestamp="2014-10-12T21:01:38" hostname="localhost" time="0.067">
+  <properties/>
+  <testcase name="testAddSummaryItem" classname="com.djh.location.list.core.service.DefaultSummaryServiceTest" time="0.067"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

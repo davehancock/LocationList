@@ -1,0 +1,191 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest" tests="1" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="localhost" time="1.412117404516E9">
+  <properties/>
+  <testcase name="testAddSummaryItem" classname="com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest" time="3.418"/>
+  <system-out><![CDATA[23:49:28,925 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+23:49:28,925 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback-test.xml] at [file:/Users/daves125125/IdeaProjects/LocationList/LocationListResource/build/resources/test/logback-test.xml]
+23:49:59,206 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+23:49:59,213 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+23:49:59,243 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:49:59,321 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+23:49:59,322 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+23:49:59,323 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+23:49:59,326 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5f9bc5bd - Registering current configuration as safe fallback point
+23:49:59.361 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest].
+23:49:59.377 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+23:49:59.436 [Test worker] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@41917d6d declaringClass = 'com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+23:49:59.442 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.451 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]: using defaults.
+23:49:59.472 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:49:59.592 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+23:49:59.593 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+23:49:59.597 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38714d56, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@168c660d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b7feb0b]
+23:49:59.601 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.602 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.603 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.603 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.605 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.606 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.608 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.609 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest]
+23:49:59.630 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@447bf267 testClass = AddNewSummaryItemRestIntegrationTest, testInstance = com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest@25676b51, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+23:49:59.631 [Test worker] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+23:49:59.632 [Test worker] DEBUG o.s.t.c.s.AbstractGenericContextLoader - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+23:49:59.763 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+23:49:59.767 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:49:59.767 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:49:59.767 [Test worker] DEBUG o.s.t.c.s.AnnotationConfigContextLoader - Registering annotated classes: {class com.djh.spring.configuration.LocationListConfiguration}
+23:49:59.823 [Test worker] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@7cf02bf7: startup date [Tue Sep 30 23:49:59 BST 2014]; root of context hierarchy
+23:49:59.823 [Test worker] DEBUG o.s.c.s.GenericApplicationContext - Bean factory for org.springframework.context.support.GenericApplicationContext@7cf02bf7: org.springframework.beans.factory.support.DefaultListableBeanFactory@67dc8b07: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,locationListConfiguration]; root of factory hierarchy
+23:49:59.847 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:49:59.847 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:49:59.897 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+23:49:59.923 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:50:00.127 [Test worker] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.djh.spring.configuration.LocationListConfiguration.locationListDAO()
+23:50:00.130 [Test worker] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.djh.spring.configuration.LocationListConfiguration.summaryResource()
+23:50:00.148 [Test worker] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.djh.spring.configuration.LocationListConfiguration.resourceCORSFilter()
+23:50:00.149 [Test worker] DEBUG o.s.c.a.ConfigurationClassBeanDefinitionReader - Registering bean definition for @Bean method com.djh.spring.configuration.LocationListConfiguration.summaryService()
+23:50:00.607 [Test worker] DEBUG o.s.c.a.ConfigurationClassEnhancer - Successfully enhanced com.djh.spring.configuration.LocationListConfiguration; enhanced class name is: com.djh.spring.configuration.LocationListConfiguration$$EnhancerBySpringCGLIB$$c115ca5e
+23:50:00.607 [Test worker] DEBUG o.s.c.a.ConfigurationClassPostProcessor - Replacing bean definition 'locationListConfiguration' existing class name 'com.djh.spring.configuration.LocationListConfiguration' with enhanced class name 'com.djh.spring.configuration.LocationListConfiguration$$EnhancerBySpringCGLIB$$c115ca5e'
+23:50:00.631 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:50:00.631 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:50:00.637 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+23:50:00.637 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:50:00.638 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:50:00.638 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:50:00.640 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+23:50:00.640 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:50:00.643 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:50:00.643 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:50:00.663 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+23:50:00.663 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:50:00.663 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:50:00.663 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+23:50:00.664 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:50:00.678 [Test worker] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@75d16e6e]
+23:50:00.682 [Test worker] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4ecd29ec]
+23:50:00.708 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@67dc8b07: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,locationListConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,locationListDAO,summaryResource,resourceCORSFilter,summaryService]; root of factory hierarchy
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'locationListConfiguration'
+23:50:00.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'locationListConfiguration'
+23:50:00.735 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'locationListConfiguration' to allow for resolving potential circular references
+23:50:00.891 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'locationListConfiguration'
+23:50:00.891 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+23:50:00.891 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+23:50:00.896 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'locationListDAO'
+23:50:00.897 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'locationListDAO'
+23:50:00.904 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListConfiguration'
+23:50:00.973 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'locationListDAO' to allow for resolving potential circular references
+23:50:00.987 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'locationListDAO'
+23:50:00.987 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'summaryResource'
+23:50:00.987 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'summaryResource'
+23:50:00.987 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListConfiguration'
+23:50:00.991 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'summaryService'
+23:50:00.991 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'summaryService'
+23:50:00.992 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListConfiguration'
+23:50:01.000 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListDAO'
+23:50:01.001 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'summaryService' to allow for resolving potential circular references
+23:50:01.008 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'summaryService'
+23:50:01.027 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'summaryResource' to allow for resolving potential circular references
+23:50:01.032 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'summaryResource'
+23:50:01.032 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'resourceCORSFilter'
+23:50:01.032 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'resourceCORSFilter'
+23:50:01.032 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'locationListConfiguration'
+23:50:01.044 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'resourceCORSFilter' to allow for resolving potential circular references
+23:50:01.049 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'resourceCORSFilter'
+23:50:01.050 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'summaryService'
+23:50:01.052 [Test worker] DEBUG o.s.c.s.GenericApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@7724fc67]
+23:50:01.054 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+23:50:01.069 [Test worker] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+23:50:01.070 [Test worker] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+23:50:01.070 [Test worker] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+23:50:01.071 [Test worker] DEBUG o.s.t.c.DefaultCacheAwareContextLoaderDelegate - Storing ApplicationContext in cache under key [[MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+23:50:01.078 [Test worker] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean 'com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest': AutowiredFieldElement for private com.djh.location.list.rest.controller.SummaryResource com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest.summaryResource
+23:50:01.091 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'summaryResource'
+23:50:01.092 [Test worker] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest' to bean named 'summaryResource'
+23:50:02.796 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+23:50:02.796 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:50:02.797 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:50:03.104 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.djh.location.list.rest.domain.SummaryItemRest com.djh.location.list.rest.controller.SummaryResource.addSummaryItem(com.djh.location.list.rest.domain.SummaryItemRest)
+23:50:03.106 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.djh.location.list.rest.domain.SummaryItems com.djh.location.list.rest.controller.SummaryResource.getAllSummaryItems()
+23:50:03.107 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary/{summaryItemId}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.djh.location.list.rest.controller.SummaryResource.updateSummaryItem(java.lang.String,com.djh.location.list.rest.domain.SummaryItemRest)
+23:50:03.107 [Test worker] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/summary/{summaryItemId}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.djh.location.list.rest.controller.SummaryResource.deleteSummaryItem(java.lang.String)
+23:50:03.601 [Test worker] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+23:50:03.604 [Test worker] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.3.Final
+23:50:03.668 [Test worker] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+23:50:03.675 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+23:50:03.683 [Test worker] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy27
+23:50:03.698 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+23:50:03.709 [Test worker] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+23:50:03.950 [Test worker] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@601e3b03
+23:50:04.039 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+23:50:04.058 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+23:50:04.059 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+23:50:04.065 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+23:50:04.065 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+23:50:04.065 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:50:04.065 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+23:50:04.066 [Test worker] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+23:50:04.066 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+23:50:04.075 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@40f8335a]
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@66f37b08]
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b127f05]
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@7b516062]
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+23:50:04.076 [Test worker] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 10 ms
+23:50:04.076 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+23:50:04.150 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing POST request for [/summary]
+23:50:04.155 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /summary
+23:50:04.159 [Test worker] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public com.djh.location.list.rest.domain.SummaryItemRest com.djh.location.list.rest.controller.SummaryResource.addSummaryItem(com.djh.location.list.rest.domain.SummaryItemRest)]
+23:50:04.376 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Reading [class com.djh.location.list.rest.domain.SummaryItemRest] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@efadff9]
+23:50:04.476 [Test worker] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Written [com.djh.location.list.rest.domain.SummaryItemRest@55c98cfd] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@efadff9]
+23:50:04.478 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Null ModelAndView returned to DispatcherServlet with name '': assuming HandlerAdapter completed request handling
+23:50:04.478 [Test worker] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = POST
+         Request URI = /summary
+          Parameters = {}
+             Headers = {Content-Type=[application/json], Accept=[application/json]}
+
+             Handler:
+                Type = com.djh.location.list.rest.controller.SummaryResource
+              Method = public com.djh.location.list.rest.domain.SummaryItemRest com.djh.location.list.rest.controller.SummaryResource.addSummaryItem(com.djh.location.list.rest.domain.SummaryItemRest)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = null
+                View = null
+               Model = null
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {Content-Type=[application/json;charset=UTF-8]}
+        Content type = application/json;charset=UTF-8
+                Body = {"id":"c2039c8a-0d96-4f1f-a890-124c036c70d3","description":"do something","location":"stoke","timestamp":1412117404410}
+       Forwarded URL = null
+      Redirected URL = null
+             Cookies = []
+23:50:04.514 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@447bf267 testClass = AddNewSummaryItemRestIntegrationTest, testInstance = com.djh.location.list.rest.controller.AddNewSummaryItemRestIntegrationTest@25676b51, testMethod = testAddSummaryItem@AddNewSummaryItemRestIntegrationTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+23:50:04.518 [Test worker] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@447bf267 testClass = AddNewSummaryItemRestIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@28b6a606 testClass = AddNewSummaryItemRestIntegrationTest, locations = '{}', classes = '{class com.djh.spring.configuration.LocationListConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,5 +1,5 @@
 apply plugin: 'war'
-apply from: 'https://raw.githubusercontent.com/akhikhl/gretty/master/pluginScripts/gretty-SNAPSHOT.plugin'
+apply plugin: "org.akhikhl.gretty"
 
 project.group = 'com.djh.locationlist'
 project.version = '0.0.5-SNAPSHOT'
@@ -9,6 +9,15 @@ project.webAppDirName = "app"
 gretty {
     port = 9125
     contextPath = "/"
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.akhikhl.gretty:gretty:1.1.6"
+    }
 }
 
 dependencies {
