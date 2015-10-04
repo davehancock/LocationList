@@ -1,0 +1,17 @@
+digraph "com.djh.location.list:LocationListModel:jar:1.0-SNAPSHOT" { 
+edge[arrowsize=1.0, penwidth=1.5];node[penwidth=2.5];
+	 node[color=darkgreen] "LocationListModel" -> "spring-context:compile";
+	 node[color=darkgreen] "LocationListModel" -> "spring-context-support:compile";
+	 node[color=darkgreen] "LocationListModel" -> "slf4j-api:compile";
+	 node[color=darkgreen] "LocationListModel" -> "slf4j-log4j12:compile";
+	 node[color=darkgreen] "LocationListModel" -> "javax.servlet-api:provided";
+	 node[color=darkgreen] "LocationListModel" -> "spring-test:test";
+	 node[color=darkgreen] "LocationListModel" -> "junit:test";
+	 node[color=coral] "spring-context:compile" -> "spring-aop:compile";
+	 node[color=coral] "spring-context:compile" -> "spring-beans:compile";
+	 node[color=coral] "spring-context:compile" -> "spring-core:compile";
+	 node[color=coral] "spring-context:compile" -> "spring-expression:compile";
+	 node[color=gold] "spring-aop:compile" -> "aopalliance:compile";
+	 node[color=crimson] "spring-core:compile" -> "commons-logging:compile";
+	 node[color=deepskyblue] "slf4j-log4j12:compile" -> "log4j:compile";
+ } 

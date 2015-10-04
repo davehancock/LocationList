@@ -1,0 +1,3 @@
+digraph "com.djh.location.list:LocationListParent:pom:1.0-SNAPSHOT" { 
+edge[arrowsize=1.0, penwidth=1.5];node[penwidth=2.5];
+ } 
