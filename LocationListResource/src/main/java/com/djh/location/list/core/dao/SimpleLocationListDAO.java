@@ -8,9 +8,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * @author David Hancock
- */
+
 public class SimpleLocationListDAO implements LocationListDAO {
 
     private AtomicLong currentId = new AtomicLong();

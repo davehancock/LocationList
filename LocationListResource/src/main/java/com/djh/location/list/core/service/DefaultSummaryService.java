@@ -7,9 +7,7 @@ import com.djh.location.list.core.domain.SummaryItem;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author David Hancock
- */
+
 public class DefaultSummaryService implements SummaryService {
 
     private LocationListDAO locationListDAO;

@@ -3,9 +3,7 @@ package com.djh.location.list.core.domain;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * @author David Hancock
- */
+
 public class SummaryItem {
 
     private UUID id;

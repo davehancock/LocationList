@@ -12,9 +12,6 @@ import org.springframework.context.annotation.Configuration;
 import javax.servlet.Filter;
 
 
-/**
- * @author David Hancock
- */
 @Configuration
 public class LocationListResourceConfiguration {
 

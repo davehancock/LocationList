@@ -10,8 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author David Hancock
- *         Restful API for LocationList operations
+ * Restful API for LocationList operations
  */
 @RestController
 @RequestMapping(value = "/summary")

@@ -4,9 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author David Hancock
- */
+
 public class SummaryItems implements Serializable {
 
     List<SummaryItemRest> summaryItemRestList = new ArrayList<>();

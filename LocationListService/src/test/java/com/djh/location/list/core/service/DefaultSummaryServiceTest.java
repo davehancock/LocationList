@@ -7,9 +7,6 @@
 //import org.mockito.InjectMocks;
 //import org.mockito.runners.MockitoJUnitRunner;
 //
-///**
-// * @author David Hancock
-// */
 //@RunWith(MockitoJUnitRunner.class)
 //public class DefaultSummaryServiceTest {
 //

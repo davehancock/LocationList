@@ -5,9 +5,7 @@ import com.djh.location.list.core.domain.SummaryItem;
 
 import java.util.List;
 
-/**
- * @author David Hancock
- */
+
 public interface SummaryService {
 
     public List<SummaryItem> findAllSummaryItems();

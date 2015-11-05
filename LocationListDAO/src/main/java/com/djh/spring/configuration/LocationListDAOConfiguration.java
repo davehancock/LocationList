@@ -6,9 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 
-/**
- * @author David Hancock
- */
 @Configuration
 public class LocationListDAOConfiguration {
 

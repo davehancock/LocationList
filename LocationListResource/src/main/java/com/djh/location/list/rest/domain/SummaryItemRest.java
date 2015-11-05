@@ -5,9 +5,7 @@ import com.djh.location.list.core.domain.SummaryItem;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * @author David Hancock
- */
+
 public class SummaryItemRest {
 
     private String id;
